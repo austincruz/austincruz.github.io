@@ -11392,7 +11392,7 @@ p.lead {
 
 .dev-icons {
   font-size: 3rem;
-  color: #000000;
+  color: black;
 }
 
 section.resume-section {
@@ -11420,4 +11420,61 @@ section.resume-section .resume-section-content {
     padding-top: 5rem;
     padding-bottom: 5rem;
   }
+}
+
+/* Create grid for pictures */
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+
+/* Create image text upon hover */
+
+/* Parent Container */.content_img{
+ position: relative;
+ width: 200px;
+ height: 200px;
+ float: left;
+ margin-left: 25px;
+ margin-right: 125px;
+ margin-bottom: 125px;
+ margin-top: 50px;
+}
+
+/* Child Text Container */.content_img div{
+ position: absolute;
+ bottom: 0;
+ right: 0;
+ background: black;
+ color: white;
+ margin-bottom: 5px;
+ font-family: sans-serif;
+ opacity: 0;
+ visibility: hidden;
+ -webkit-transition: visibility 0s, opacity 0.5s linear; 
+ transition: visibility 0s, opacity 0.5s linear;
+}
+
+/* Hover on Parent Container */.content_img:hover{
+ cursor: pointer;
+}
+
+.content_img:hover div{
+ width: 150px;
+ padding: 8px 15px;
+ visibility: visible;
+ opacity: 0.7; 
 }
