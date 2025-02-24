@@ -11478,3 +11478,9 @@ section.resume-section .resume-section-content {
  visibility: visible;
  opacity: 0.7; 
 }
+
+.badges-container {
+  display: flex;
+  justify-content: flex-start;  /* Align badges to the left */
+  gap: 10px;  /* Adds some space between the badges */
+}
