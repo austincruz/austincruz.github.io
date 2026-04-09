@@ -11484,3 +11484,16 @@ section.resume-section .resume-section-content {
   justify-content: flex-start;  /* Align badges to the left */
   gap: 10px;  /* Adds some space between the badges */
 }
+
+<style>
+.social-icon img {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover img {
+  transform: scale(1.2);
+}
+</style>
